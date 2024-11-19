@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #15776f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+#outer {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 800px;
+    height: 90%;
+    max-height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#inner {
+    background-color: #0f4f53;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#inner3 {
+    margin-top: 20px;
+}
+
+#quote {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #12aa9d;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#controls button:hover {
+    background-color: #0f4f53;
+}
+#inner2 {
+    background-color: #12aa9d;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#inner2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 0 15px 15px 0;
+}
+footer {
+    background-color: #073531;
+    color: #12aa9d;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    width: auto;
+    height: 28px;
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+.slide-in {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideIn 2s 1s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    #outer {
+        flex-direction: column;
+        height: auto;
+    }
+    #inner, #inner2 {
+        height: auto;
+        flex: none;
+    }
+    #inner {
+        flex: 1;
+    }
+    #inner2 {
+        flex: 2;
+    }
+}
