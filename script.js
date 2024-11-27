@@ -1,5 +1,5 @@
 const quotes = [
-        `dear!"Hard work never goes waste!"`,
+        "dear! Hard work never goes waste!",
         "Believe you can and you are halfway there.",
         "Practice makes a man perfect."
 
