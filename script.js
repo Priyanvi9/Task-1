@@ -21,7 +21,7 @@ const quoteImage = document.getElementById("quoteImage");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const userName = prompt("Welcome! What's your name?");
-quoteElement.textContent = `${userName}! ${quotes[currentQuoteIndex]}`;
+quoteElement.textContent = `Hello dear ❤! <br/>${userName}! ${quotes[currentQuoteIndex]}`;
 quoteImage.src = images[currentQuoteIndex];
 function updateQuoteAndImage() {
     quoteElement.textContent = ` ${quotes[currentQuoteIndex]}`;
