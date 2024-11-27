@@ -1,5 +1,5 @@
 const quotes = [
-        "Hard work never goes waste!",
+        `dear! <br/> "Hard work never goes waste!"`,
         "Believe you can and you are halfway there.",
         "Practice makes a man perfect."
 
@@ -21,7 +21,7 @@ const quoteImage = document.getElementById("quoteImage");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const userName = prompt("Welcome! What's your name?");
-quoteElement.textContent = `${userName} dear♥,<br/> ${quotes[currentQuoteIndex]}`;
+quoteElement.textContent = `${userName}! ${quotes[currentQuoteIndex]}`;
 quoteImage.src = images[currentQuoteIndex];
 function updateQuoteAndImage() {
     quoteElement.textContent = ` ${quotes[currentQuoteIndex]}`;
