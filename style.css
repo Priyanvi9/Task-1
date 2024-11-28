@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #15776f;
     display: flex;
@@ -12,9 +13,9 @@ body {
     font-family: Arial, sans-serif;
     overflow: hidden;
 }
+
 #outer {
     display: flex;
-    flex-direction: row;
     width: 90%;
     max-width: 800px;
     height: 90%;
@@ -23,6 +24,7 @@ body {
     overflow: hidden;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
 #inner {
     background-color: #0f4f53;
     flex: 2;
@@ -34,17 +36,18 @@ body {
     padding: 20px;
     text-align: center;
 }
-#inner3 {
-    margin-top: 20px;
-}
 
 #quote {
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-#navigation-buttons button {
-    margin: 0 10px;
+#controls {
+    display: flex;
+    gap: 20px;
+}
+
+#controls button {
     padding: 10px 20px;
     border: none;
     background-color: #12aa9d;
@@ -54,9 +57,11 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-#navigation-buttons button:hover {
+
+#controls button:hover {
     background-color: #0f4f53;
 }
+
 #inner2 {
     background-color: #12aa9d;
     flex: 3;
@@ -65,12 +70,14 @@ body {
     align-items: center;
     overflow: hidden;
 }
+
 #inner2 img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
     border-radius: 0 15px 15px 0;
 }
+
 footer {
     background-color: #073531;
     color: #12aa9d;
@@ -83,15 +90,12 @@ footer {
     width: auto;
     height: 28px;
 }
+
 .fade-in {
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
-.slide-in {
-    transform: translateY(100%);
-    opacity: 0;
-    animation: slideIn 2s 1s forwards;
-}
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -100,16 +104,7 @@ footer {
         opacity: 1;
     }
 }
-@keyframes slideIn {
-    0% {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
+
 @media (max-width: 768px) {
     #outer {
         flex-direction: column;
@@ -118,11 +113,5 @@ footer {
     #inner, #inner2 {
         height: auto;
         flex: none;
-    }
-    #inner {
-        flex: 1;
-    }
-    #inner2 {
-        flex: 2;
     }
 }
