@@ -10,10 +10,7 @@ const quotes = [
 const images = [
     "https://plus.unsplash.com/premium_photo-1664304707130-04095161fe32?w=500&auto=format&fit=crop&q=60",
     "https://images.unsplash.com/photo-1549633030-89d0743bad01?w=500&auto=format&fit=crop&q=60",
-    "https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=500&auto=format&fit=crop&q=60",
-    "https://files.oaiusercontent.com/file-S2YffgS3b5My8viZcxSKmN?se=2024-11-27T17%3A39%3A01Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800",
-    "https://files.oaiusercontent.com/file-UJepsPqheVpcZioxfvJHwf?se=2024-11-27T17%3A42%3A24Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800",
-    "https://files.oaiusercontent.com/file-CwGRLVZQH9qjyKUXgrdmCg?se=2024-11-27T17%3A44%3A32Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800"
+    "https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=500&auto=format&fit=crop&q=60"
 ];
 
 let currentQuoteIndex = 0;
