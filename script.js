@@ -18,6 +18,7 @@ let currentQuoteIndex = 0;
 // DOM elements
 const quoteElement = document.getElementById("quote");
 const quoteImage = document.getElementById("quoteImage");
+const backgroundImage = document.getElementById("backgroundImage");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
@@ -25,13 +26,15 @@ const nextBtn = document.getElementById("nextBtn");
 const userName = prompt("Welcome! What's your name?") || "Guest";
 
 // Initialize first quote and image
-quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
+quoteElement.textContent = ${userName}, ${quotes[currentQuoteIndex]};
 quoteImage.src = images[currentQuoteIndex % images.length];
+backgroundImage.src = images[currentQuoteIndex % images.length];
 
 // Function to update quote and image
 function updateQuoteAndImage() {
-    quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
+    quoteElement.textContent = ${userName}, ${quotes[currentQuoteIndex]};
     quoteImage.src = images[currentQuoteIndex % images.length];
+    backgroundImage.src = images[currentQuoteIndex % images.length];
 }
 
 // Event listeners for navigation
