@@ -14,23 +14,27 @@ const images = [
 ];
 
 let currentQuoteIndex = 0;
+
+// DOM elements
 const quoteElement = document.getElementById("quote");
 const quoteImage = document.getElementById("quoteImage");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 
+// Prompt for user name
 const userName = prompt("Welcome! What's your name?") || "Guest";
 
 // Initialize first quote and image
-quoteElement.textContent = ${userName}, ${quotes[currentQuoteIndex]};
-quoteImage.src = images[currentQuoteIndex];
+quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
+quoteImage.src = images[currentQuoteIndex % images.length];
 
+// Function to update quote and image
 function updateQuoteAndImage() {
-    // Update the quote and image for the current index
-    quoteElement.textContent = ${userName}, ${quotes[currentQuoteIndex]};
-    quoteImage.src = images[currentQuoteIndex];
+    quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
+    quoteImage.src = images[currentQuoteIndex % images.length];
 }
 
+// Event listeners for navigation
 nextBtn.addEventListener("click", () => {
     currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length; 
     updateQuoteAndImage();
