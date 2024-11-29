@@ -31,11 +31,11 @@ setTimeout(() => {
     welcomeMessage.style.display = "none";
 }, 3000); // Hide after 3 seconds (you can adjust this duration)
 
-quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
+quoteElement.textContent = `${quotes[currentQuoteIndex]}`;
 quoteImage.src = images[currentQuoteIndex];
 
 function updateQuoteAndImage() {
-    quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
+    quoteElement.textContent = `${quotes[currentQuoteIndex]}`;
     quoteImage.src = images[currentQuoteIndex];
 }
 
