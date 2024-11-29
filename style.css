@@ -40,6 +40,7 @@ body {
 #quote {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 #controls {
@@ -113,5 +114,12 @@ footer {
     #inner, #inner2 {
         height: auto;
         flex: none;
+    }
+    #controls {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #quote {
+        font-size: 1rem;
     }
 }
