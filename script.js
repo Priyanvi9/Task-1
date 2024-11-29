@@ -28,7 +28,7 @@ welcomeMessage.textContent = `Welcome, ${userName}!`;
 // Hide the welcome message after it has been shown
 setTimeout(() => {
     welcomeMessage.style.display = "none";
-}, 3000); // Hide after 3 seconds (you can adjust this duration)
+}, 3); // Hide after 3 seconds (you can adjust this duration)
 
 quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
 quoteImage.src = images[currentQuoteIndex];
