@@ -23,7 +23,7 @@ const welcomeMessage = document.getElementById("welcomeMessage");
 const userName = prompt("Welcome! What's your name?") || "Guest";
 
 // Show the welcome message only once
-welcomeMessage.textContent = `Welcome, ${userName}!`;
+welcomeMessage.textContent = `Welcome, ${userName}!`;  // Set the welcome message once
 
 // Set the first quote and image
 quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
