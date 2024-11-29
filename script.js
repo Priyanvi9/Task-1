@@ -22,14 +22,17 @@ const welcomeMessage = document.getElementById("welcomeMessage");
 
 const userName = prompt("Welcome! What's your name?") || "Guest";
 
-// Show the welcome message only once
-welcomeMessage.textContent = `Welcome, ${userName}!`;  // Set the welcome message once
+// Show the welcome message only once when the page loads
+welcomeMessage.textContent = `Welcome, ${userName}!`;
 
-// Set the first quote and image
+// Hide the welcome message after it has been shown
+setTimeout(() => {
+    welcomeMessage.style.display = "none";
+}, 3000); // Hide after 3 seconds (you can adjust this duration)
+
 quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
 quoteImage.src = images[currentQuoteIndex];
 
-// Update quote and image when navigating
 function updateQuoteAndImage() {
     quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
     quoteImage.src = images[currentQuoteIndex];
