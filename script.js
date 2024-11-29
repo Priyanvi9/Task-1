@@ -1,4 +1,3 @@
-
 const quotes = [
     "Hard work never goes waste!",
     "Believe you can and you are halfway there.",
@@ -15,30 +14,27 @@ const images = [
 ];
 
 let currentQuoteIndex = 0;
-
-const welcomeMessageElement = document.getElementById("welcomeMessage");
 const quoteElement = document.getElementById("quote");
 const quoteImage = document.getElementById("quoteImage");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
+const welcomeMessage = document.getElementById("welcomeMessage");
 
-// Get user's name (default to "Guest" if none provided)
 const userName = prompt("Welcome! What's your name?") || "Guest";
 
-// Set welcome message (only displayed once)
-welcomeMessageElement.textContent = `Welcome, ${userName}!`;
+// Show the welcome message only once
+welcomeMessage.textContent = `Welcome, ${userName}!`;
 
-// Display the first quote and image
-quoteElement.textContent = quotes[currentQuoteIndex];
+// Set the first quote and image
+quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
 quoteImage.src = images[currentQuoteIndex];
 
-// Update quotes and images
+// Update quote and image when navigating
 function updateQuoteAndImage() {
-    quoteElement.textContent = quotes[currentQuoteIndex];
+    quoteElement.textContent = `${userName}, ${quotes[currentQuoteIndex]}`;
     quoteImage.src = images[currentQuoteIndex];
 }
 
-// Add event listeners for buttons
 nextBtn.addEventListener("click", () => {
     currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
     updateQuoteAndImage();
