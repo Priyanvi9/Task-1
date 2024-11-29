@@ -11,7 +11,10 @@ const images = [
     "https://plus.unsplash.com/premium_photo-1664304707130-04095161fe32?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aGFyZCUyMHdvcmt8ZW58MHx8MHx8fDA%3D",
     "https://images.unsplash.com/photo-1549633030-89d0743bad01?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmVsaWV2ZSUyMGluJTIweW91cnNlbGZ8ZW58MHx8MHx8fDA%3D",
     "https://images.unsplash.com/photo-1682687220199-d0124f48f95b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGtlZXAlMjBnb2luZ3xlbnwwfHwwfHx8MA%3D%3D",
-    "q1.png,webp"
+    "https://images.unsplash.com/photo-1544979590-37e9b47eb705?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8JTIyQXR0aXR1ZGUlMjBpcyUyMGElMjBsaXR0bGUlMjB0aGluZyUyMHRoYXQlMjBtYWtlcyUyMGElMjBiaWclMjBkaWZmZXJlbmNlLiUyMiUyQyUyMGltYWdlfGVufDB8fDB8fHww",
+    "https://images.unsplash.com/photo-1495364141860-b0d03eccd065?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fCUyMkklMjBjYW5ub3QlMjBleHByZXNzJTIwaG93JTIwaW1wb3J0YW50JTIwaXQlMjBpcyUyMHRvJTIwYmVsaWV2ZSUyMHRoYXQlMjB0YWtpbmclMjBvbmUlMjB0aW55JUUyJTgwJTk0YW5kJTIwcG9zc2libHklMjB2ZXJ5JTIwdW5jb21mb3J0YWJsZSVFMiU4MCU5NHN0ZXAlMjBhdCUyMGElMjB0aW1lJTIwY2FuJTIwdWx0aW1hdGVseSUyMGFkZCUyMHVwJTIwdG8lMjBhJTIwZ3JlYXQlMjBkaXN0YW5jZS4lMjIlMjBpbWFnZSUyMHJlbGF0ZWQlMjB0byUyMHRoaXMlMjBxdW90ZXxlbnwwfHwwfHx8MA%3D%3D",
+    "https://plus.unsplash.com/premium_photo-1661578878097-6bc025a08ce5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aWdub3JhbmNlfGVufDB8fDB8fHww"
+
 ];
 
 let currentQuoteIndex = 0;
