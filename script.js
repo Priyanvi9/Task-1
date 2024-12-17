@@ -51,3 +51,11 @@ prevBtn.addEventListener("click", () => {
     currentQuoteIndex = (currentQuoteIndex - 1 + quotes.length) % quotes.length;
     updateQuoteAndImage();
 });
+quoteElement.classList.remove("fade-in");
+void quoteElement.offsetWidth; 
+quoteElement.classList.add("fade-in");
+images.forEach((img) => {
+    const image = new Image();
+    image.src = img;
+});
+
